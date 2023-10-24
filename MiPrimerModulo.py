@@ -18,5 +18,5 @@ def asimetria_curtosis5(a,b,c,d,e):
     suma_cuadrados=(a-med)**2 + (b-med)**2 + (c-med)**2 + (d-med)**2 + (e-med)**2
     ds=(suma_cuadrados/4)**0.5
     coef_asim=(1/5)*((a-med)/ds)**3 + ((b-med)/ds)**3 + ((c-med)/ds)**3 + ((d-med)/ds)**3 + ((e-med)/ds)**3
-    kurtosis = (1/5)*((a-med)/ds)**4 + ((b-med)/ds)**4 + ((c-med)/ds)**4 + ((d-med)/ds)**4 + ((e-med)/ds)**4
-    return skewness, kurtosis
+    curtosis=(1/5)*((a-med)/ds)**4 + ((b-med)/ds)**4 + ((c-med)/ds)**4 + ((d-med)/ds)**4 + ((e-med)/ds)**4
+    return coef_asim, curtosis
